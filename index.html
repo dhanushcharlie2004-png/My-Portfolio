@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Dhanush S | Java & Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Dhanush S, a Computer Science Graduate and Java & Full-Stack Developer. Explore full-stack and backend projects, database systems, and REST APIs built with Java, MySQL, and Spring Boot.">
+  <meta name="keywords" content="Dhanush S, Java Developer, Full-Stack Developer, Spring Boot, MySQL, Backend Developer, Computer Science Graduate, Portfolio, REST API, CRUD">
+  <meta name="author" content="Dhanush S">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dhanush S | Java & Full-Stack Developer Portfolio">
+  <meta property="og:description" content="Portfolio of Dhanush S, a Computer Science Graduate and Java & Full-Stack Developer specializing in building web and backend applications.">
+  <meta property="og:url" content="https://github.com/dhanush-s">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Dhanush S | Java & Full-Stack Developer Portfolio">
+  <meta property="twitter:description" content="Portfolio of Dhanush S, a Computer Science Graduate and Java & Full-Stack Developer specializing in building web and backend applications.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Progress Bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Dhanush S Portfolio Home">
+        <span class="logo-accent">&lt;</span>Dhanush S<span class="logo-accent"> /&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark theme" title="Toggle Theme">
+          <!-- Moon Icon (Dark Mode Active) -->
+          <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode Active) -->
+          <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-greeting">Hi, my name is</span>
+          <h1 class="hero-title">Dhanush S</h1>
+          <h2 class="hero-subtitle">
+            <span class="role-highlight" id="typewriter-text">Java Developer</span>
+          </h2>
+          <p class="hero-lead">
+            I am a Computer Science graduate passionate about web development and backend development. I focus on building modern, responsive user interfaces and robust, scalable backend systems.
+          </p>
+          <div class="hero-contact-info">
+            <div class="hero-info-item">
+              <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Karur, Tamil Nadu</span>
+            </div>
+            <div class="hero-info-item">
+              <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:dhanushcharlie2004@gmail.com" class="hero-email-link">dhanushcharlie2004@gmail.com</a>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="resume.pdf" target="_blank" download class="btn btn-secondary">
+              <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-decor-glow" aria-hidden="true"></div>
+          <div class="hero-image-card">
+            <div class="hero-image-inner">
+              <img src="profile.jpg" alt="Dhanush S - Profile Photo" class="hero-profile-img">
+              <!-- Stylized fallback SVG if photo doesn't load -->
+              <svg class="hero-profile-fallback" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-text-wrapper">
+            <p class="about-intro">
+              I completed my degree from <strong class="highlight-institution">NSN College of Engineering and Technology</strong> with a specialization in Computer Science. I am highly motivated and passionate about web development and backend engineering.
+            </p>
+            <p>
+              I specialize in building secure database systems and responsive user interfaces. My technical skill set includes <strong class="highlight-tech">Java</strong>, <strong class="highlight-tech">Spring Boot</strong>, <strong class="highlight-tech">HTML</strong>, <strong class="highlight-tech">CSS</strong>, <strong class="highlight-tech">JavaScript</strong>, and <strong class="highlight-tech">MySQL</strong>.
+            </p>
+            <p>
+              For modern workflow management and streamlined development, I actively build my applications using <strong class="highlight-tech">GitHub</strong>, <strong class="highlight-tech">VS Code</strong>, and <strong class="highlight-tech">IntelliJ IDEA</strong>.
+            </p>
+            <div class="chat-shortcut-wrapper">
+              <span class="shortcut-label">Ask Dhanush Bot:</span>
+              <div class="shortcut-tags">
+                <button class="chat-shortcut-btn" data-question="Which college did you study?">Where did you study?</button>
+                <button class="chat-shortcut-btn" data-question="Are you a fresher?">Are you a fresher?</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-info-cards">
+            <!-- Education Card -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h3 class="info-title">Education</h3>
+                <p class="info-summary">Computer Science Specialization</p>
+                <div class="info-extra">
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>B.E. in Computer Science & Engineering</span>
+                  </div>
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>NSN College of Engineering & Tech</span>
+                  </div>
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>Passed out: 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h3 class="info-title">Experience</h3>
+                <p class="info-summary">Personal Projects</p>
+                <div class="info-extra">
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>Built 4+ full-stack backend & REST API applications</span>
+                  </div>
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>Designed secure MySQL relational database schemas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Passion Card -->
+            <div class="info-card">
+              <div class="info-icon-wrapper">
+                <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h3 class="info-title">Passion</h3>
+                <p class="info-summary">Learning & Growth</p>
+                <div class="info-extra">
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>Eager to learn new frameworks & software patterns</span>
+                  </div>
+                  <div class="info-extra-item">
+                    <span class="info-dot"></span>
+                    <span>Highly adaptive fresher ready for teamwork</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        
+        <div class="skills-grid">
+          <!-- Backend Category -->
+          <div class="skills-category-card">
+            <h3 class="category-title">Backend Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-backend" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Spring Boot</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-backend" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-backend" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Frontend Category -->
+          <div class="skills-category-card">
+            <h3 class="category-title">Frontend Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-frontend" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-frontend" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-frontend" style="width: 75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tools Category -->
+          <div class="skills-category-card">
+            <h3 class="category-title">Developer Tools</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-tools" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-tools" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">IntelliJ IDEA</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill fill-tools" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="payroll_mockup.jpg" alt="Employee Payroll System UI Preview" class="project-image">
+            </div>
+            <div class="project-card-inner">
+              <div class="project-icon-wrapper">
+                <svg class="project-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="project-title">Employee Payroll System</h3>
+              <p class="project-description">
+                A payroll management platform configured with relational tables using MySQL Workbench, featuring secure Spring Boot backend APIs to perform comprehensive employee CRUD operations and calculations.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">MySQL Workbench</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Java</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dhanush-s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-github" aria-label="View Employee Payroll System on GitHub">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="banking_mockup.jpg" alt="Banking Management System UI Preview" class="project-image">
+            </div>
+            <div class="project-card-inner">
+              <div class="project-icon-wrapper">
+                <svg class="project-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="project-title">Banking Management System</h3>
+              <p class="project-description">
+                A robust banking core logic simulation written in native Java, with a MySQL backend layer handling account states, secure deposits, withdrawals, and ledger transaction tracking.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java Core</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Relational DB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dhanush-s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-github" aria-label="View Banking Management System on GitHub">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="ecommerce_mockup.jpg" alt="E-Commerce Order Management System UI Preview" class="project-image">
+            </div>
+            <div class="project-card-inner">
+              <div class="project-icon-wrapper">
+                <svg class="project-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+              </div>
+              <h3 class="project-title">E-Commerce Order Management System</h3>
+              <p class="project-description">
+                An inventory and transaction lifecycle tracker that monitors product stock levels, handles checkout validation states, and utilizes MySQL persistent tables for order history logs.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Spring Boot</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dhanush-s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-github" aria-label="View E-Commerce Order Management System on GitHub">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="student_api_mockup.jpg" alt="Student Management API UI Preview" class="project-image">
+            </div>
+            <div class="project-card-inner">
+              <div class="project-icon-wrapper">
+                <svg class="project-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="project-title">Student Management API</h3>
+              <p class="project-description">
+                A RESTful microservice built with Spring Boot, connected to a database with CRUD operations for managing student profiles, course enrollments, and academic details.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">CRUD</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dhanush-s" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm btn-github" aria-label="View Student Management API on GitHub">
+                  <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-subtitle">
+          Let’s connect and build something great together. Feel free to reach out to me for opportunities or collaborations!
+        </p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+              <span class="error-msg" id="name-error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+              <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+            <span class="error-msg" id="message-error">Please enter a message.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            Send Message
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-hidden="true">
+    <div class="toast-content">
+      <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toast-message">Message sent successfully!</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="https://github.com/dhanush-s" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+          <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dhanush-s" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+          <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="#contact" class="social-icon-link" aria-label="Send Message" title="Send a Message">
+          <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copyright">&copy; 2026 Dhanush S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating AI Chat Assistant -->
+  <div id="ai-chat-widget" class="ai-chat-widget">
+    <button id="chat-toggle-btn" class="chat-toggle-btn" aria-label="Open AI Assistant" title="Chat with Dhanush">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chat-icon">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+    
+    <div id="chat-window" class="chat-window" aria-hidden="true">
+      <div class="chat-header">
+        <div class="chat-avatar">D</div>
+        <div class="chat-header-info">
+          <h4>Dhanush</h4>
+          <span class="chat-status"><span class="status-dot"></span> Online</span>
+        </div>
+        <button id="chat-close-btn" class="chat-close-btn" aria-label="Close Chat">&times;</button>
+      </div>
+      
+      <div id="chat-messages" class="chat-messages">
+        <!-- Start empty as requested -->
+      </div>
+      
+      <form id="chat-input-form" class="chat-input-form">
+        <input type="text" id="chat-input" placeholder="Type a message..." required autocomplete="off">
+        <button type="submit" class="chat-send-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
