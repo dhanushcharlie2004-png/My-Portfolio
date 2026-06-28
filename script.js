@@ -472,7 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Contact & Hire
       if (cleanInput.includes('contact') || cleanInput.includes('email') || cleanInput.includes('phone') || cleanInput.includes('reach') || cleanInput.includes('hire') || cleanInput.includes('linkedin') || cleanInput.includes('github') || cleanInput.includes('resume')) {
-        return "You can get in touch with me through:<br>• **LinkedIn**: <a href='https://www.linkedin.com/in/dhanush-s' target='_blank'>linkedin.com/in/dhanush-s</a><br>• **GitHub**: <a href='https://github.com/dhanush-s' target='_blank'>github.com/dhanush-s</a><br>• **Email**: You can send me a message through the contact form on this page! You can also download my resume using the 'Download Resume' button at the top of the page.";
+        return "You can get in touch with me through:<br>• **LinkedIn**: <a href='https://www.linkedin.com/in/dhanush-s1211' target='_blank'>linkedin.com/in/dhanush-s1211</a><br>• **GitHub**: <a href='https://github.com/dhanushcharlie2004-png' target='_blank'>github.com/dhanushcharlie2004-png</a><br>• **Email**: You can send me a message through the contact form on this page! You can also download my resume using the 'Download Resume' button at the top of the page.";
       }
 
       // Fun / Small talk
@@ -493,7 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       // General Fallback
-      return "That's a great question! As Dhanush's personal assistant, I can share that Dhanush is a Java & Full-Stack Developer who graduated in 2026. He is skilled in Java, Spring Boot, MySQL, HTML, CSS, and JS, and has built 4 key projects. If your question is specific, you can fill out the contact form below or connect via <a href='https://www.linkedin.com/in/dhanush-s' target='_blank'>LinkedIn</a> to talk to him directly!";
+      return "That's a great question! As Dhanush's personal assistant, I can share that Dhanush is a Java & Full-Stack Developer who graduated in 2026. He is skilled in Java, Spring Boot, MySQL, HTML, CSS, and JS, and has built 4 key projects. If your question is specific, you can fill out the contact form below or connect via <a href='https://www.linkedin.com/in/dhanush-s1211' target='_blank'>LinkedIn</a> to talk to him directly!";
     }
   }
 
